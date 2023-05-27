@@ -1,4 +1,5 @@
 :root{
+    --background-color-secondary:#F4F4FD;;
     --background-color:#FFFFFF;
     --accent-color:#4d5ae5;
     --primary-color-text:#434455;
@@ -72,15 +73,8 @@ img {
     display: flex;
 }
 
-body{
-    color: var(--primary-color-text) ;
-    font-family: var(--primary-font);
-    background-color: var(--background-color);
-}
 .logo-link{
     margin-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
@@ -133,13 +127,21 @@ color: var(--primary-color-text);
 }
 
 .section{
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
     background-color: var(--secondary-color-text);;
-    /* margin-bottom: 120px; */
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7) ,rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1\ \(1\).jpg);
 }
 
 .title{
+    margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
     max-width: 496px;
@@ -183,6 +185,7 @@ letter-spacing: 0.02em;
 color: var(--secondary-color-text);
 }
 .item{
+    margin-bottom:8px;
     text-align: center;
     font-size: 16px;
 line-height: 1.5;
@@ -208,7 +211,7 @@ text-transform: capitalize;
 color: var(--secondary-color-text);
 }
 .background-section{
-    background: #F4F4FD;
+    background: var(--background-color-secondary);
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -224,14 +227,15 @@ color: var(--secondary-color-text);
 .bgr-text{
     background: var(--background-color);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .foot{
-    padding-top: 100px;
-    padding-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     background: var(--secondary-color-text);
 }
 .span-footer{
-    color: #F4F4FD;
+    color: var(--background-color-secondary);
 }
 .item-foot{
     margin-top: auto;
@@ -240,7 +244,7 @@ color: var(--secondary-color-text);
     font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.02em;
-color: #F4F4FD;
+color: var(--background-color-secondary);
 }
 
 .container{
@@ -267,7 +271,6 @@ color: #F4F4FD;
     list-style: none;
     margin-bottom: 0;
     margin-top: 0;
-    padding-bottom: 120px;
 }
 
 .foto-item{
@@ -284,7 +287,7 @@ color: #F4F4FD;
     margin-right: 0;
     display: flex;
     gap: var(--card-set-gap);
-    padding-bottom: 120px;
+    
 }
 .worker{
     padding: 32px 16px;  
@@ -294,6 +297,145 @@ color: #F4F4FD;
     display: inline-block;
     margin-right: 0;
     margin-bottom: 16px;
+}
+
+.item-work::before{
+    display: block;
+    content: "";
+   height: 112px;
+background-image: url(../images/antenna\ 1\(1\).svg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: var(--background-color-secondary);
+border-radius: 4px;
+margin-bottom: 8px;
+}
+.icon-clock::before{
+    background-image: url(../images/clock\ 1\(1\).svg);
+}
+.icon-diagram::before{
+    background-image: url(../images/diagram\ 1\(1\).svg);
+}
+.icon-astronaut::before{
+    background-image: url(../images/astronaut\ 1\(1\).svg);
+}
+.title-main{
+    margin-top: 0;
+    margin-bottom: 72px;
+    font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--secondary-color-text);
+}
+.icon-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.icon-item{
+width: 40px;
+height: 40px;
+}
+.icon-list-icon{
+     display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.a-icon{
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot-logo{
+    display: flex;
+}
+
+.social-foot{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.link-foot{
+    margin-right: 120px;
+}
+
+.icon-list-icon{
+     display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.section-five {
+    padding-top: 72px;
+    padding-bottom: 120px;
+}
+
+.list-customers {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+.item-customers {
+    width: calc((100% - 96px) / 6);
+    height: 88px;
+}
+.customrs-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customrs-link:hover,
+.customrs-link:focus{
+    border-color: #9747FF;
+    color: #9747FF;
+}
+.customrs-link:hover .icon,
+.customrs-link:focus .icon{
+    fill: #404BBF;
+}
+.icon {
+    width: 104px;
+    height: 56px;
+    fill: #8E8F99;;
+}
+.subject-customers{
+    text-align: center;
+    margin-bottom: 72px;
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--secondary-color-text);
+
+}
+
+.a-icons{
+      width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-icons:hover,
+.a-icons:focus,
+.a-icons:active{
+    background-color:#31D0AA;
 }
 
 
@@ -414,6 +556,7 @@ color: var(--primary-color-text);
     background-color:  var(--secondary-color-text);
 }
 .link-footer{
+    text-decoration: none;
     font-family: var(--secondary-font);
     font-weight: 800;
 font-size: 18px;
@@ -426,8 +569,7 @@ color: var(--accent-color) ;
     color: #f4f4fd ;
 }
 .item-portf{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 16px;
     width: 264px;
     font-weight: 400;
     font-size: 16px;
@@ -455,7 +597,6 @@ margin-bottom: 72px
  }
 .link-addition{
     padding: 32px 16px;
-    margin-bottom: 8px;
     border: var(--border-color);
     border-top: none;
 }
@@ -477,4 +618,14 @@ margin-bottom: 72px
 
     .footer-flex{
         display: flex;
+    }
+
+    .button-shadof:hover,
+    .button-shadof:focus{
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    .flex-element:hover,
+    .flex-element:focus{
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
