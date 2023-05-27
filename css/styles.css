@@ -135,10 +135,10 @@ color: var(--primary-color-text);
     height: 600px;
     margin-left: auto;
     margin-right: auto;
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7) ,rgba(46, 47, 66, 0.7)) ,url(../images/people-office.jpg);
     background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   background-image:linear-gradient(rgba(46, 47, 66, 0.7) ,rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1\ \(1\).jpg);
     background-color: var(--secondary-color-text);;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -404,6 +404,7 @@ height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--color-a-section-five);
 }
 .customrs-link:hover,
 .customrs-link:focus{
