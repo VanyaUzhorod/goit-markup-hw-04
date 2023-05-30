@@ -529,7 +529,6 @@ cursor: pointer;
 }
 .btn-portf:hover,
 .btn-portf:focus{
-    border: 1px solid transparent;
     color:var(--background-color);
     background-color: var(--border-color-hover)
     
